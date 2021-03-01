@@ -1,0 +1,49 @@
+.videoFooter {
+  position: relative;
+  color: white;
+  bottom: 150px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.videoFooter_text {
+  flex: 1;
+}
+
+.videoFooter_text > p {
+  padding-bottom: 20px;
+}
+
+.videoFooter_text > h3 {
+  padding-bottom: 20px;
+}
+.videoFooter__ticker > .ticker {
+  height: fit-content;
+  margin-left: 30px; /* for ticker and icon don't corapsing/ ticker ile icon tarpismasin diye */
+  width: 60%;
+}
+
+.videoFooter__icon {
+  position: absolute;
+}
+
+.videoFooter__text {
+  padding-top: 7px;
+}
+
+.videoFooter__record {
+  animation: spin infinite 5s linear;
+  position: absolute;
+  filter: invert(1); /*change color from black to white*/
+  bottom: 0;
+  right: 20px;
+  height: 50px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
